@@ -4,12 +4,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #2497e3;
 }
 .time-control {
   width: 50%;
   display: flex;
-
+  align-items: center;
   input {
     width: 100%;
     padding: 1rem 0rem;
@@ -42,7 +41,6 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
-  animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
   background: #2497e3;
   border-radius: 1px;
@@ -66,7 +64,6 @@ input[type="range"]::-moz-range-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
-  animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
   background: #2497e3;
   border-radius: 1px;
@@ -85,7 +82,6 @@ input[type="range"]::-ms-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
-  animate: 0.2s;
   background: transparent;
   border-color: transparent;
   color: transparent;
