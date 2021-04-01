@@ -4,12 +4,14 @@ import data from "./util";
 import Player from "./compoents/Player";
 import Song from "./compoents/Song";
 import Library from "./compoents/Library";
+import Nav from "./compoents/Nav";
 function App() {
   const [songs, setSongs] = useState(data());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="App">
+      <Nav />
       <Song currentSong={currentSong} />
       <Player
         isPlaying={isPlaying}

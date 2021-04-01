@@ -6,6 +6,9 @@
   height: 100%;
   box-shadow: 3px 3px 50px rgb(204, 204, 204);
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5 ease;
+  opacity: 0;
   h2 {
     padding: 2rem;
   }
