@@ -6,7 +6,7 @@ function chillHop() {
       cover:
         "https://chillhop.com/wp-content/uploads/2020/07/1ca6410720af4607262d8c64afac2b83670d5a3b-1024x1024.jpg",
       artist: "Mo Anando",
-      audio: "../public/music/test.m3",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
       active: true,
