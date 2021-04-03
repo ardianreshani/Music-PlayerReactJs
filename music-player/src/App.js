@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import "./styles/app.scss";
-import data from "./util";
+import data from "./data";
 import Player from "./compoents/Player";
 import Song from "./compoents/Song";
 import Library from "./compoents/Library";
@@ -22,7 +22,7 @@ function App() {
   const audioRef = useRef(null);
 
   return (
-    <div className="App">
+    <div className={`App ${libraryStatus ? "library-active" : ""}`}>
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
       <Song currentSong={currentSong} />
       <Player
@@ -34,6 +34,7 @@ function App() {
         setSongInfo={setSongInfo}
         songInfo={songInfo}
         songs={songs}
+        setSongs={setSongs}
       />
       <Library
         audioRef={audioRef}
